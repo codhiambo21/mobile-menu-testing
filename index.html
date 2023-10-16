@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Navigation bar</title>
+  </head>
+  <body>
+    <header>
+      <div id="brand"><a href="/">MyCompany</a></div>
+      <nav>
+        <ul>
+          <li><a href="/home">Home</a></li>
+          <li><a href="/products">Products</a></li>
+          <li><a href="/about">About</a></li>
+          <li id="login"><a href="/login" >Login</a></li>
+          <li id="signup"><a href="/signup">Signup</a></li>
+        </ul>
+      </nav>
+      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-menu">
+          <li><a href="/home">Home</a></li>
+          <li><a href="/products">Products</a></li>
+          <li><a href="/about">About</a></li>
+          <li id="login"><a href="/login" >Login</a></li>
+          <li id="signup"><a href="/signup">Signup</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main-content">
+        <h1>We put your smile at our priority</h1>
+        <p>Our goal is to provide a work environment where each person is valued, 
+          respected and has an opportunity for personal and professional growth.</p>
+          <a href="#" class="btn"> More About Us</a>
+      </div>
+  
+    </main>
+  
+    <Section class="core-section">
+      <h1>OUR "CARE" PLAN</h1>
+  
+      <div class="card-container">
+        <div class="card">
+          <img src="image/icon1.JPG" alt="Icon 1">
+          <h2>C- - Compassion</h2>
+          <p>We uphold each other through the physical, emotional, spiritual and ethical journeys that define the human experience no matter what disabilities we may have.</p>
+        </div>
+        <div class="card">
+          <img src="image/icon2.JPG " alt="Icon 2">
+          <h2>A - Accountability</h2>
+          <p>We pledge to be responsible for the human and financial resources entrusted to us by our members and their families.</p>
+        </div>
+        <div class="card">
+          <img src="image/icon3.JPG" alt="Icon 3">
+          <h2>R - Respect</h2>
+          <p>We affirm the dignity and diversity of all members striving to always honor the needs, talents and hopes of each member we serve.</p>
+        </div>
+        <div class="card">
+          <img src="image/icon4.JPG" alt="Icon 4">
+          <h2>E - Excellence</h2>
+          <p>We commit ourselves to curiosity. innovation, advocacy and leadership in the field of supporting the developmentally delayed.</p>
+        </div>
+      </div>
+    </Section>
+  
+    <section class="hero">
+      <div class="overlay"></div>
+      <div class="content">
+        <h1>Welcome to Our Website</h1>
+        <p>Your message or description goes here.</p>
+        <a href="#" class="btn">Get Started</a>
+      </div>
+    </section>
+  
+
+    <script src="index.js">
+      function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}
+    </script>
+  </body>
+</html>
